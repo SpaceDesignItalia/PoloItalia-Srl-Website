@@ -21,6 +21,8 @@ const resources = {
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat`,
         HeroCTA: "Speak with us!",
         Partners: "Successful partners",
+
+        CustomersAroundWorld: "Customers around the world",
       },
     },
   },
@@ -42,6 +44,8 @@ const resources = {
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat`,
         HeroCTA: "Parla con noi!",
         Partners: "Partners di successo",
+
+        CustomersAroundWorld: "Clienti in tutto il mondo",
       },
     },
   },
