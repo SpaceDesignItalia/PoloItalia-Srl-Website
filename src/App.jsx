@@ -1,9 +1,25 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import {
+  Route,
+  Routes,
+  Navigate,
+  BrowserRouter as Router,
+} from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import i18n from "./i18n/i18n";
 import Home from "./Pages/Home/Home";
 import NavBar from "./Components/Layout/NavBar";
 
-export default function App() {
+function App() {
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    const linguaSalvata = localStorage.getItem("lingua");
+    if (linguaSalvata) {
+      i18n.changeLanguage(linguaSalvata);
+    }
+  }, []);
+
   return (
     <>
       <NavBar />
@@ -13,3 +29,5 @@ export default function App() {
     </>
   );
 }
+
+export default App;

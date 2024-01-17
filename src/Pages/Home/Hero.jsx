@@ -1,7 +1,11 @@
 import { Button } from "@nextui-org/react";
+import { useTranslation } from "react-i18next";
+
 import React from "react";
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative">
       <div className="mx-auto max-w-7xl">
@@ -18,7 +22,7 @@ export default function Hero() {
           <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Lorem ipsum dolor sit amet.
+                {t("Home.HeroText")}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -26,7 +30,7 @@ export default function Hero() {
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <Button color="primary" size="lg" radius="sm">
-                  Parla con noi
+                  {t("Home.HeroCTA")}
                 </Button>
               </div>
             </div>

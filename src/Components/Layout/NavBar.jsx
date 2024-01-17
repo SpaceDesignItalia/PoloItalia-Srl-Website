@@ -1,36 +1,17 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
+import { useTranslation } from "react-i18next";
+import { useNavigate, useParams } from "react-router-dom";
 import {
-  ArrowPathIcon,
   Bars3Icon,
   ChartPieIcon,
   CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-  HomeIcon,
-} from "@heroicons/react/20/solid";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Logo from "../../assets/logo.jpg";
-
-const products = [
-  {
-    name: "Prodotto1",
-    description: "Primo Prod",
-    href: "#",
-    icon: ChartPieIcon,
-  },
-  {
-    name: "Prodotto2",
-    description: "Secondo Prod",
-    href: "#",
-    icon: CursorArrowRaysIcon,
-  },
-];
+import i18n from "../../i18n/i18n";
+import { t } from "i18next";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -38,7 +19,62 @@ function classNames(...classes) {
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [products, setProducts] = useState([]);
+  const selectedLanguage = localStorage.getItem("lingua");
+  const { t } = useTranslation();
+  const { lang } = useParams();
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    // Simulated API call or data load
+    const fetchData = async () => {
+      try {
+        // Assuming you have translations for products in i18next
+        const product1 = t("Navbar.Products.Product1");
+        const product1Desc = t("Navbar.Products.Product1Desc");
+        const product2 = t("Navbar.Products.Product2");
+        const product2Desc = t("Navbar.Products.Product2Desc");
+
+        const productsData = [
+          {
+            name: product1,
+            description: product1Desc,
+            href: "#",
+            icon: ChartPieIcon,
+          },
+          {
+            name: product2,
+            description: product2Desc,
+            href: "#",
+            icon: CursorArrowRaysIcon,
+          },
+        ];
+
+        setProducts(productsData);
+      } catch (error) {
+        console.error("Error loading products data:", error);
+        setProducts([]); // Set products to an empty array or handle the error accordingly
+      }
+    };
+
+    fetchData();
+  }, [selectedLanguage]);
+
+  const cambiaLingua = (lingua) => {
+    if (lingua === selectedLanguage) {
+      // Se l'utente prova a selezionare la stessa lingua, non fare nulla
+      return;
+    }
+
+    i18n.changeLanguage(lingua);
+    localStorage.setItem("lingua", lingua);
+
+    const newUrl =
+      lingua === "it" ? `${location.pathname}/it` : location.pathname;
+
+    navigate(newUrl, { replace: true });
+    setMobileMenuOpen(false);
+  };
   return (
     <header className="bg-white z-50">
       <nav
@@ -50,7 +86,7 @@ export default function NavBar() {
             <img className="h-16 w-auto" src={Logo} alt="" />
           </a>
         </div>
-        <div></div>
+
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -67,7 +103,7 @@ export default function NavBar() {
           </a>
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Product
+              {t("Navbar.Product")}
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -114,13 +150,29 @@ export default function NavBar() {
           </Popover>
 
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Contattaci
+            {t("Navbar.Contact")}
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+          <div className="flex flex-row gap-3 justify-center items-center">
+            <button
+              onClick={() => cambiaLingua("en")}
+              className={`text-sm font-semibold text-gray-900 focus:outline-none ${
+                selectedLanguage === "en" ? "underline italic" : ""
+              }`}
+            >
+              English
+            </button>
+            <span className="text-gray-900">|</span>
+            <button
+              onClick={() => cambiaLingua("it")}
+              className={`text-sm font-semibold text-gray-900 focus:outline-none ${
+                selectedLanguage === "it" ? "underline italic" : ""
+              }`}
+            >
+              Italiano
+            </button>
+          </div>
         </div>
       </nav>
       <Dialog
