@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import { useParams } from "react-router-dom";
 import Partners from "./Partners";
 import CustomersAroundWorld from "./CustomersAroundWorld";
+import OurStrengths from "./OurStrengths";
 
 export default function Home() {
   const { lang } = useParams();
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <Partners />
+      <OurStrengths />
       <CustomersAroundWorld />
     </>
   );
