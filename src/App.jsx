@@ -15,8 +15,13 @@ function App() {
 
   useEffect(() => {
     const linguaSalvata = localStorage.getItem("lingua");
+
     if (linguaSalvata) {
       i18n.changeLanguage(linguaSalvata);
+    } else {
+      // Se non esiste una lingua salvata, imposta l'inglese come predefinita
+      i18n.changeLanguage("en");
+      localStorage.setItem("lingua", "en");
     }
   }, []);
 

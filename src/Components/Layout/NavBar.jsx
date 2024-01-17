@@ -240,12 +240,25 @@ export default function NavBar() {
                 </a>
               </div>
               <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
+                <div className="flex flex-row gap-3 justify-center items-center">
+                  <button
+                    onClick={() => cambiaLingua("en")}
+                    className={`text-sm font-semibold text-gray-900 focus:outline-none ${
+                      selectedLanguage === "en" ? "underline italic" : ""
+                    }`}
+                  >
+                    English
+                  </button>
+                  <span className="text-gray-900">|</span>
+                  <button
+                    onClick={() => cambiaLingua("it")}
+                    className={`text-sm font-semibold text-gray-900 focus:outline-none ${
+                      selectedLanguage === "it" ? "underline italic" : ""
+                    }`}
+                  >
+                    Italiano
+                  </button>
+                </div>
               </div>
             </div>
           </div>
