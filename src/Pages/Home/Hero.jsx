@@ -25,8 +25,7 @@ export default function Hero() {
                 {t("Home.HeroText")}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                {t("Home.HeroDesc")}
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <Button color="primary" size="lg" radius="sm">

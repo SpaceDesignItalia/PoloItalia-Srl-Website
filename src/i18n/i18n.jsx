@@ -17,7 +17,10 @@ const resources = {
       },
       Home: {
         HeroText: "The best way to learn a language is to speak it.",
+        HeroDesc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat`,
         HeroCTA: "Speak with us!",
+        Partners: "Successful partners",
       },
     },
   },
@@ -35,7 +38,10 @@ const resources = {
       },
       Home: {
         HeroText: "Il modo migliore per imparare una lingua è parlarla.",
+        HeroDesc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat`,
         HeroCTA: "Parla con noi!",
+        Partners: "Partners di successo",
       },
     },
   },
