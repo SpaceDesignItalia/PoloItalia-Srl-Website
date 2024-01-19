@@ -23,6 +23,14 @@ const resources = {
         Partners: "Successful partners",
         OurStrength: "Our Strengths",
 
+        Product1: "Product 1",
+        Product1desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+
+        Product2: "Product 2",
+        Product2desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+
         CustomersAroundWorld: "Customers around the world",
       },
     },
@@ -47,6 +55,14 @@ const resources = {
         Partners: "Partners di successo",
 
         OurStrength: "I nostri punti di forza",
+
+        Product1: "Prodotto 1",
+        Product1desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+
+        Product2: "Prodotto 2",
+        Product2desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
 
         CustomersAroundWorld: "Clienti in tutto il mondo",
       },
