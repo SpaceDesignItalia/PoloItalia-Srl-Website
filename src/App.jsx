@@ -10,6 +10,7 @@ import i18n from "./i18n/i18n";
 import Home from "./Pages/Home/Home";
 import NavBar from "./Components/Layout/NavBar";
 import Contact from "./Pages/Contact/Contact";
+import Footer from "./Components/Layout/Footer";
 
 function App() {
   const { t } = useTranslation();
@@ -33,6 +34,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }
