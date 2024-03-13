@@ -1,4 +1,5 @@
 // i18n.js
+import { Description } from "@mui/icons-material";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
@@ -43,6 +44,17 @@ const resources = {
           ProductCTA: "Discover our products",
         },
         CustomersAroundWorld: "Polo in the world",
+        ContactForm: {
+          Title: "Contact us",
+          Description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+          FirstName: "First Name",
+          LastName: "Last Name",
+          Email: "Email",
+          Company: "Company Name",
+          Message: "Message",
+          SendButton: "Send Message",
+        },
       },
     },
   },
@@ -88,6 +100,17 @@ const resources = {
           ProductCTA: "Scopri i nostri prodotti",
         },
         CustomersAroundWorld: "Polo nel mondo",
+        ContactForm: {
+          Title: "Contattaci",
+          Description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+          FirstName: "Nome",
+          LastName: "Cognome",
+          Email: "Email",
+          Company: "Nome Azienda",
+          Message: "Messaggio",
+          SendButton: "Invia Messaggio",
+        },
       },
     },
   },

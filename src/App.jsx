@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 import i18n from "./i18n/i18n";
 import Home from "./Pages/Home/Home";
 import NavBar from "./Components/Layout/NavBar";
+import Footer from "./Components/Layout/Footer";
 
 function App() {
   const { t } = useTranslation();
@@ -31,6 +32,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </>
   );
 }
