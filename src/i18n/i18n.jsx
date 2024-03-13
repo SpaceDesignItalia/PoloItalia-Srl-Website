@@ -36,15 +36,12 @@ const resources = {
           description:
             "Wifi remote access to the equipment control board for any specific required modification and adjustment of the softwares.",
         },
-
-        Product1: "Product 1",
-        Product1desc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-
-        Product2: "Product 2",
-        Product2desc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-
+        Product: {
+          ProductTitle: "Product",
+          ProductDesc:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+          ProductCTA: "Discover our products",
+        },
         CustomersAroundWorld: "Polo in the world",
       },
     },
@@ -84,15 +81,12 @@ const resources = {
           description:
             "Accesso remoto WiFi ai quadri di controllo delle apparecchiature per ogni possibile richiesta di modifica e miglioramento dei software gestionali.",
         },
-
-        Product1: "Prodotto 1",
-        Product1desc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-
-        Product2: "Prodotto 2",
-        Product2desc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-
+        Product: {
+          ProductTitle: "Prodotto",
+          ProductDesc:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+          ProductCTA: "Scopri i nostri prodotti",
+        },
         CustomersAroundWorld: "Polo nel mondo",
       },
     },
