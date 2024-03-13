@@ -70,12 +70,22 @@ export default function NavBar() {
     i18n.changeLanguage(lingua);
     localStorage.setItem("lingua", lingua);
 
-    const newUrl =
-      lingua === "it" ? `${location.pathname}/it` : location.pathname;
+    let newUrl = location.pathname;
+    // Verifica se l'URL contiene già '/it'
+    const isItalianUrl = newUrl.includes("/it");
+
+    if (lingua === "it" && !isItalianUrl) {
+      // Aggiungi '/it' solo se non è già presente nell'URL
+      newUrl += "/it";
+    } else if (lingua === "en" && isItalianUrl) {
+      // Rimuovi '/it' se l'utente passa all'inglese
+      newUrl = newUrl.replace("/it", "");
+    }
 
     navigate(newUrl, { replace: true });
     setMobileMenuOpen(false);
   };
+
   return (
     <header className="sticky top-0 bg-white z-50">
       <nav
@@ -151,7 +161,7 @@ export default function NavBar() {
           </Popover>
 
           <a
-            href="Contact"
+            href={selectedLanguage === "it" ? "/contact/it" : "/contact"}
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             {t("Navbar.Contact")}
