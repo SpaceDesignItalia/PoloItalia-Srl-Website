@@ -16,12 +16,26 @@ const resources = {
         },
       },
       Home: {
-        HeroText: "The best way to learn a language is to speak it.",
-        HeroDesc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat`,
+        HeroText: "The refrigerant gases moving, dosing and filling company",
+        HeroDesc: `Since 1998, polo is your perfect partner for customized process equipment handling all the refrigerant gases classified as A1, A2, A2L and A3 series.`,
         HeroCTA: "Speak with us!",
-        Partners: "Successful partners",
+        Partners: "Partner",
         OurStrength: "Our Strengths",
+        Strength1: {
+          name: "Customization",
+          description:
+            "An engineering team for the mechanical, electrical and software design fully dedicated to the needs of the customers with a detailed customization of the produced equipment.",
+        },
+        Strength2: {
+          name: "Quality",
+          description:
+            "Exclusive use of materials and components of the best worldwide brands including the most innovative technological solutions.",
+        },
+        Strength3: {
+          name: "Service",
+          description:
+            "Wifi remote access to the equipment control board for any specific required modification and adjustment of the softwares.",
+        },
 
         Product1: "Product 1",
         Product1desc:
@@ -31,7 +45,7 @@ const resources = {
         Product2desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
 
-        CustomersAroundWorld: "Customers around the world",
+        CustomersAroundWorld: "Polo in the world",
       },
     },
   },
@@ -48,13 +62,28 @@ const resources = {
         },
       },
       Home: {
-        HeroText: "Il modo migliore per imparare una lingua è parlarla.",
-        HeroDesc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat`,
+        HeroText:
+          "Specialisti per la movimentazione, il dosaggio e l’iniezione dei gas refrigeranti",
+        HeroDesc: `Nata nel 1998, polo è partner ideale per sistemi personalizzati nell’utilizzo di tutti i gas refrigeranti appartenenti alle classi A1, A2, A2L ed A3.`,
         HeroCTA: "Parla con noi!",
-        Partners: "Partners di successo",
+        Partners: "Partner",
 
         OurStrength: "I nostri punti di forza",
+        Strength1: {
+          name: "Personalizzazione",
+          description:
+            "Uno staff di progettazione meccanica, elettrica e software esclusivamente dedicato alle richieste e le necessità dei clienti e conseguente personalizzazione nei minimi particolari delle unità prodotte.",
+        },
+        Strength2: {
+          name: "Qualità",
+          description:
+            "L’utilizzo di materiali e componentistica delle migliori marche a livello mondiale con le più innovative soluzioni tecnologiche.",
+        },
+        Strength3: {
+          name: "Assistenza",
+          description:
+            "Accesso remoto WiFi ai quadri di controllo delle apparecchiature per ogni possibile richiesta di modifica e miglioramento dei software gestionali.",
+        },
 
         Product1: "Prodotto 1",
         Product1desc:
@@ -64,7 +93,7 @@ const resources = {
         Product2desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
 
-        CustomersAroundWorld: "Clienti in tutto il mondo",
+        CustomersAroundWorld: "Polo nel mondo",
       },
     },
   },
