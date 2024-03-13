@@ -2,6 +2,7 @@ import { Fragment, useState, useEffect } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   Bars3Icon,
   ChartPieIcon,
@@ -149,7 +150,10 @@ export default function NavBar() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="Contact"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             {t("Navbar.Contact")}
           </a>
         </Popover.Group>
