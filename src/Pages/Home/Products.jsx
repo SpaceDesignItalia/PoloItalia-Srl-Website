@@ -1,9 +1,28 @@
 import { Button } from "@nextui-org/react";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useParams } from "react-router-dom";
+import foto8 from "../../assets/FOTO8.jpg";
+import foto9 from "../../assets/FOTO9.jpg";
+import foto10 from "../../assets/FOTO10.jpg";
+import foto11 from "../../assets/FOTO11.jpg";
+import foto12 from "../../assets/FOTO12.jpg";
+import foto13 from "../../assets/FOTO13.jpg";
+import foto14 from "../../assets/FOTO14.jpg";
 
 export default function Products() {
+  const { id } = useParams();
   const { t } = useTranslation();
+
+  const photoMap = {
+    8: foto8,
+    9: foto9,
+    10: foto10,
+    11: foto11,
+    12: foto12,
+    13: foto13,
+    14: foto14,
+  };
   return (
     <>
       <div className="overflow-hidden bg-white py-24 sm:py-32">
@@ -12,30 +31,17 @@ export default function Products() {
             <div className="lg:pr-8 lg:pt-4">
               <div className="flex flex-col gap-5 lg:max-w-lg">
                 <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  {t("Home.Product.ProductTitle")}
+                  {t("OurProducts.Product" + id)}
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
+                  {t("OurProducts.Product" + id + "desc")}
                 </p>
-                <Button
-                  href="#"
-                  color="primary"
-                  radius="sm"
-                  size="lg"
-                  className="md:w-2/3"
-                >
-                  {t("Home.Product.ProductCTA")}
-                </Button>
               </div>
             </div>
             <img
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-              alt="Product screenshot"
+              src={photoMap[id]}
+              alt={`Office content ${id}`}
               className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-full md:-ml-4 lg:-ml-0"
-              width={2432}
-              height={1442}
             />
           </div>
         </div>
