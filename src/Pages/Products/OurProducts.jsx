@@ -29,11 +29,14 @@ export default function OurProducts() {
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
               <h2 className="text-xl font-bold text-white">
-                {t("OurProducts.Product8")}
+                {t("OurProducts.Product1")}
               </h2>
+              <p className="mt-1 text-sm text-gray-300">
+                {t("OurProducts.Product1desc")}
+              </p>
             </div>
             <a
-              href="/product/8"
+              href="/ourProducts/product/1"
               className="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
             >
               {t("OurProducts.ExploreProduct")}
@@ -54,11 +57,11 @@ export default function OurProducts() {
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
               <h2 className="text-xl font-bold text-white">
-                {t("OurProducts.Product9")}
+                {t("OurProducts.Product2")}
               </h2>
             </div>
             <a
-              href="/product/9"
+              href="/ourProducts/product/2"
               className="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
             >
               {t("OurProducts.ExploreProduct")}
@@ -79,11 +82,11 @@ export default function OurProducts() {
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
               <h2 className="text-xl font-bold text-white">
-                {t("OurProducts.Product10")}
+                {t("OurProducts.Product3")}
               </h2>
             </div>
             <a
-              href="/product/10"
+              href="/ourProducts/product/3"
               className="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
             >
               {t("OurProducts.ExploreProduct")}
@@ -104,11 +107,11 @@ export default function OurProducts() {
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
               <h2 className="text-xl font-bold text-white">
-                {t("OurProducts.Product11")}
+                {t("OurProducts.Product4")}
               </h2>
             </div>
             <a
-              href="/product/11"
+              href="/ourProducts/product/4"
               className="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
             >
               {t("OurProducts.ExploreProduct")}
@@ -129,11 +132,11 @@ export default function OurProducts() {
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
               <h2 className="text-xl font-bold text-white">
-                {t("OurProducts.Product12")}
+                {t("OurProducts.Product5")}
               </h2>
             </div>
             <a
-              href="/product/12"
+              href="/ourProducts/product/5"
               className="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
             >
               {t("OurProducts.ExploreProduct")}
@@ -154,11 +157,11 @@ export default function OurProducts() {
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
               <h2 className="text-xl font-bold text-white">
-                {t("OurProducts.Product13")}
+                {t("OurProducts.Product6")}
               </h2>
             </div>
             <a
-              href="/product/13"
+              href="/ourProducts/product/6"
               className="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
             >
               {t("OurProducts.ExploreProduct")}
@@ -179,11 +182,11 @@ export default function OurProducts() {
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
               <h2 className="text-xl font-bold text-white">
-                {t("OurProducts.Product14")}
+                {t("OurProducts.Product7")}
               </h2>
             </div>
             <a
-              href="/product/14"
+              href="/ourProducts/product/7"
               className="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
             >
               {t("OurProducts.ExploreProduct")}

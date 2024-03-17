@@ -66,34 +66,38 @@ const resources = {
       OurProducts: {
         OurProds: "Our products",
         ExploreProduct: "Explore in detail",
-        Product8:
+        Product1: "MRC",
+        Product1desc:
           "Vacuum and charging equipment of refrigerant gases for cooling circuits and heat pumps.",
-        Product8desc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        Product9:
+        Product2:
           "Vacuum and charging equipment of refrigerant gases for medium/large cylinders and drums.",
-        Product9desc:
+        Product2desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        Product10:
+        Product3:
           "Automatic filling lines of refrigerant gases for small aerosol cans.",
-        Product10desc:
+        Product3desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        Product11:
+        Product4:
           "Recovery equipment of the refrigerant gases in liquid and vapor phase from any storage tanks and volume.",
-        Product11desc:
+        Product4desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        Product12:
+        Product5:
           "Mechanical pumps pneumatically driven for the transfer and pressurization of the refrigerant gases up to high pressure values.",
-        Product12desc:
+        Product5desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        Product13:
+        Product6:
           "Vacuum and charging equipment of carbon dioxide for small and medium cylinders for medical and food applications.",
-        Product13desc:
+        Product6desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        Product14:
+        Product7:
           "Infrared technology equipment for the leak detection of the refrigerant gases.",
-        Product14desc:
+        Product7desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      },
+      Error404: {
+        ErrorTitle: "Page not found",
+        ErrorDesc: "Sorry, we couldn’t find the page you’re looking for.",
+        ErrorCTA: "Go back home",
       },
     },
   },
@@ -161,34 +165,39 @@ const resources = {
       OurProducts: {
         OurProds: "I nostri prodotti",
         ExploreProduct: "Esplora nel dettaglio",
-        Product8:
+        Product1: "MRC",
+        Product1desc:
           "Unità di vuoto e carica dei gas refrigeranti per circuiti frigogeni e pompe di calore.",
-        Product8desc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        Product9:
+        Product2:
           "Unità di vuoto e carica dei gas refrigeranti in bombole e drums di medie e grandi dimensioni.",
-        Product9desc:
+        Product2desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        Product10:
+        Product3:
           "Linee automatiche di riempimento dei gas refrigeranti per piccole bombole tipo aerosol.",
-        Product10desc:
+        Product3desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        Product11:
+        Product4:
           "Unità di recupero dei gas refrigeranti negli stati di liquido e vapori da qualsiasi tipo di contenitore e relativo volume.",
-        Product11desc:
+        Product4desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        Product12:
+        Product5:
           "Pompe meccaniche a comando pneumatico per il trasferimento e la pressurizzazione dei gas refrigeranti ad alte pressioni.",
-        Product12desc:
+        Product5desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        Product13:
+        Product6:
           "Unità di vuoto e carica di anidride carbonica in medie e piccole bombole ad uso medicale ed alimentare.",
-        Product13desc:
+        Product6desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        Product14:
+        Product7:
           "Unità per la ricerca delle perdite dei gas refrigeranti con tecnologia all'infrarosso.",
-        Product14desc:
+        Product7desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      },
+      Error404: {
+        ErrorTitle: "Pagina non trovata",
+        ErrorDesc:
+          "Siamo spiacenti, ma la pagina che stai cercando non è disponibile al momento. Potrebbe essere stata rimossa, rinominata o potresti aver digitato un URL errato.",
+        ErrorCTA: "Torna alla home",
       },
     },
   },

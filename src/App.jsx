@@ -12,8 +12,8 @@ import Home from "./Pages/Home/Home";
 import NavBar from "./Components/Layout/NavBar";
 import Contact from "./Pages/Contact/Contact";
 import Footer from "./Components/Layout/Footer";
-import OurProducts from "./Pages/Home/OurProducts";
-import Products from "./Pages/Home/Products";
+import OurProducts from "./Pages/Products/OurProducts";
+import Products from "./Pages/Products/Products";
 
 function App() {
   const { t } = useTranslation();
@@ -40,8 +40,8 @@ function App() {
         <Route path="/contact/it" element={<Contact />} />
         <Route path="/ourProducts" element={<OurProducts />} />
         <Route path="/ourProducts/it" element={<OurProducts />} />
-        <Route path="/Product/:id" element={<Products />} />
-        <Route path="/Product/:id/it" element={<Products />} />
+        <Route path="/ourProducts/Product/:id" element={<Products />} />
+        <Route path="/ourProducts/Product/:id/it" element={<Products />} />
       </Routes>
       <Footer />
     </>

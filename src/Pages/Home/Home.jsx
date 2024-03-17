@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import Partners from "./Partners";
 import CustomersAroundWorld from "./CustomersAroundWorld";
 import OurStrengths from "./OurStrengths";
-import Products from "./Products";
+import Products from "../Products/Products";
 import ContactForm from "./ContactForm";
 
 export default function Home() {
