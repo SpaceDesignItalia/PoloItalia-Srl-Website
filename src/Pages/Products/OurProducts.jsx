@@ -59,6 +59,9 @@ export default function OurProducts() {
               <h2 className="text-xl font-bold text-white">
                 {t("OurProducts.Product2")}
               </h2>
+              <p className="mt-1 text-sm text-gray-300">
+                {t("OurProducts.Product2desc")}
+              </p>
             </div>
             <a
               href="/ourProducts/product/2"
@@ -84,6 +87,9 @@ export default function OurProducts() {
               <h2 className="text-xl font-bold text-white">
                 {t("OurProducts.Product3")}
               </h2>
+              <p className="mt-1 text-sm text-gray-300">
+                {t("OurProducts.Product3desc")}
+              </p>
             </div>
             <a
               href="/ourProducts/product/3"
@@ -109,6 +115,9 @@ export default function OurProducts() {
               <h2 className="text-xl font-bold text-white">
                 {t("OurProducts.Product4")}
               </h2>
+              <p className="mt-1 text-sm text-gray-300">
+                {t("OurProducts.Product4desc")}
+              </p>
             </div>
             <a
               href="/ourProducts/product/4"
@@ -134,6 +143,9 @@ export default function OurProducts() {
               <h2 className="text-xl font-bold text-white">
                 {t("OurProducts.Product5")}
               </h2>
+              <p className="mt-1 text-sm text-gray-300">
+                {t("OurProducts.Product5desc")}
+              </p>
             </div>
             <a
               href="/ourProducts/product/5"
@@ -159,6 +171,9 @@ export default function OurProducts() {
               <h2 className="text-xl font-bold text-white">
                 {t("OurProducts.Product6")}
               </h2>
+              <p className="mt-1 text-sm text-gray-300">
+                {t("OurProducts.Product6desc")}
+              </p>
             </div>
             <a
               href="/ourProducts/product/6"
@@ -184,6 +199,9 @@ export default function OurProducts() {
               <h2 className="text-xl font-bold text-white">
                 {t("OurProducts.Product7")}
               </h2>
+              <p className="mt-1 text-sm text-gray-300">
+                {t("OurProducts.Product7desc")}
+              </p>
             </div>
             <a
               href="/ourProducts/product/7"
