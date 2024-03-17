@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import {
   Route,
   Routes,
@@ -11,9 +12,12 @@ import Home from "./Pages/Home/Home";
 import NavBar from "./Components/Layout/NavBar";
 import Contact from "./Pages/Contact/Contact";
 import Footer from "./Components/Layout/Footer";
+import OurProducts from "./Pages/Products/OurProducts";
+import Products from "./Pages/Products/Products";
 
 function App() {
   const { t } = useTranslation();
+  const { id } = useParams();
 
   useEffect(() => {
     const linguaSalvata = localStorage.getItem("lingua");
@@ -34,6 +38,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/contact/it" element={<Contact />} />
+        <Route path="/ourProducts" element={<OurProducts />} />
+        <Route path="/ourProducts/it" element={<OurProducts />} />
+        <Route path="/ourProducts/Product/:id" element={<Products />} />
+        <Route path="/ourProducts/Product/:id/it" element={<Products />} />
       </Routes>
       <Footer />
     </>
