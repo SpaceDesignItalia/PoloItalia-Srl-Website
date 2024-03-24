@@ -10,7 +10,7 @@ export default function ContactForm() {
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           {t("Home.ContactForm.Title")}
         </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
+        <p className="mt-2 text-xl leading-8 text-gray-600">
           {t("Home.ContactForm.Description")}
         </p>
       </div>

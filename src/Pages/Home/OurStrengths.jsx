@@ -38,11 +38,11 @@ export default function OurStrengths() {
 
         <div className="mx-auto max-w-2xl px-4 pb-24 pt-16 sm:px-6 sm:pb-32 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:pt-32">
           <div className="lg:col-start-2">
-            <p className="mt-4 text-4xl font-bold tracking-tight text-gray-900">
+            <p className="mt-4 text-5xl font-bold tracking-tight text-gray-900">
               {t("Home.OurStrength")}
             </p>
 
-            <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+            <dl className="mt-10 max-w-xl space-y-8 text-lg leading-7 text-gray-600 lg:max-w-none">
               {features.map((feature) => (
                 <div key={feature.name} className="relative pl-9">
                   <dt className="inline font-semibold text-gray-900">

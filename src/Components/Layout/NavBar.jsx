@@ -67,12 +67,12 @@ export default function NavBar() {
   return (
     <header className="sticky top-0 bg-white z-50">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            <img className="h-16 w-auto" src={Logo} alt="" />
+            <img className="h-20 w-auto" src={Logo} alt="" />
           </a>
         </div>
 
@@ -87,19 +87,19 @@ export default function NavBar() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/" className="text-lg font-semibold leading-6 text-gray-900">
             Home
           </a>
           <Button
             href="/ourProducts"
-            className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
+            className="flex items-center gap-x-1 text-lg font-semibold leading-6 text-gray-900"
           >
             {t("Navbar.Product")}
           </Button>
 
           <a
             href={selectedLanguage === "it" ? "/contact/it" : "/contact"}
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-lg font-semibold leading-6 text-gray-900"
           >
             {t("Navbar.Contact")}
           </a>
@@ -108,7 +108,7 @@ export default function NavBar() {
           <div className="flex flex-row gap-3 justify-center items-center">
             <button
               onClick={() => cambiaLingua("en")}
-              className={`text-sm font-semibold text-gray-900 focus:outline-none ${
+              className={`text-lg font-semibold text-gray-900 focus:outline-none ${
                 selectedLanguage === "en" ? "underline italic" : ""
               }`}
             >
@@ -117,7 +117,7 @@ export default function NavBar() {
             <span className="text-gray-900">|</span>
             <button
               onClick={() => cambiaLingua("it")}
-              className={`text-sm font-semibold text-gray-900 focus:outline-none ${
+              className={`text-lg font-semibold text-gray-900 focus:outline-none ${
                 selectedLanguage === "it" ? "underline italic" : ""
               }`}
             >
