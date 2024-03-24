@@ -26,7 +26,7 @@ export default function Hero() {
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                   {t("Home.HeroText")}
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
+                <p className="mt-6 text-2xl leading-8 text-gray-600">
                   {t("Home.HeroDesc")}
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
