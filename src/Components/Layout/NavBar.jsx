@@ -12,7 +12,6 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Logo from "../../assets/logo.jpg";
 import i18n from "../../i18n/i18n";
-import { t } from "i18next";
 import { Button } from "@mui/base";
 
 function classNames(...classes) {
@@ -68,12 +67,12 @@ export default function NavBar() {
   return (
     <header className="sticky top-0 bg-white z-50">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            <img className="h-16 w-auto" src={Logo} alt="" />
+            <img className="h-20 w-auto" src={Logo} alt="" />
           </a>
         </div>
 
@@ -88,19 +87,19 @@ export default function NavBar() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/" className="text-lg font-semibold leading-6 text-gray-900">
             Home
           </a>
           <Button
             href="/ourProducts"
-            className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
+            className="flex items-center gap-x-1 text-lg font-semibold leading-6 text-gray-900"
           >
             {t("Navbar.Product")}
           </Button>
 
           <a
             href={selectedLanguage === "it" ? "/contact/it" : "/contact"}
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-lg font-semibold leading-6 text-gray-900"
           >
             {t("Navbar.Contact")}
           </a>
@@ -109,7 +108,7 @@ export default function NavBar() {
           <div className="flex flex-row gap-3 justify-center items-center">
             <button
               onClick={() => cambiaLingua("en")}
-              className={`text-sm font-semibold text-gray-900 focus:outline-none ${
+              className={`text-lg font-semibold text-gray-900 focus:outline-none ${
                 selectedLanguage === "en" ? "underline italic" : ""
               }`}
             >
@@ -118,7 +117,7 @@ export default function NavBar() {
             <span className="text-gray-900">|</span>
             <button
               onClick={() => cambiaLingua("it")}
-              className={`text-sm font-semibold text-gray-900 focus:outline-none ${
+              className={`text-lg font-semibold text-gray-900 focus:outline-none ${
                 selectedLanguage === "it" ? "underline italic" : ""
               }`}
             >
@@ -156,39 +155,17 @@ export default function NavBar() {
                 >
                   Home
                 </a>
-                <Disclosure as="div" className="-mx-3">
-                  {({ open }) => (
-                    <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Product
-                        <ChevronDownIcon
-                          className={classNames(
-                            open ? "rotate-180" : "",
-                            "h-5 w-5 flex-none"
-                          )}
-                          aria-hidden="true"
-                        />
-                      </Disclosure.Button>
-                      <Disclosure.Panel className="mt-2 space-y-2">
-                        {products.map((item) => (
-                          <Disclosure.Button
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </Disclosure.Button>
-                        ))}
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
                 <a
-                  href="#"
+                  href="/ourProducts"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Contattaci
+                  {t("Navbar.Product")}
+                </a>
+                <a
+                  href="/contact"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  {t("Navbar.Contact")}
                 </a>
               </div>
               <div className="py-6">

@@ -13,7 +13,7 @@ export default function OurProducts() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-5xl">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           {t("OurProducts.OurProds")}
         </h2>
         <div className="relative overflow-hidden rounded-lg mt-16 lg:h-96">
@@ -28,10 +28,10 @@ export default function OurProducts() {
           <div aria-hidden="true" className="relative h-32 w-full lg:hidden" />
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-4xl font-bold text-white">
                 {t("OurProducts.Product1")}
               </h2>
-              <p className="mt-1 text-sm text-gray-300">
+              <p className="mt-1 text-lg text-gray-300">
                 {t("OurProducts.Product1desc")}
               </p>
             </div>
@@ -56,10 +56,10 @@ export default function OurProducts() {
           <div aria-hidden="true" className="relative h-32 w-full lg:hidden" />
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-4xl font-bold text-white">
                 {t("OurProducts.Product2")}
               </h2>
-              <p className="mt-1 text-sm text-gray-300">
+              <p className="mt-1 text-lg text-gray-300">
                 {t("OurProducts.Product2desc")}
               </p>
             </div>
@@ -84,10 +84,10 @@ export default function OurProducts() {
           <div aria-hidden="true" className="relative h-32 w-full lg:hidden" />
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-4xl font-bold text-white">
                 {t("OurProducts.Product3")}
               </h2>
-              <p className="mt-1 text-sm text-gray-300">
+              <p className="mt-1 text-lg text-gray-300">
                 {t("OurProducts.Product3desc")}
               </p>
             </div>
@@ -112,10 +112,10 @@ export default function OurProducts() {
           <div aria-hidden="true" className="relative h-32 w-full lg:hidden" />
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-4xl font-bold text-white">
                 {t("OurProducts.Product4")}
               </h2>
-              <p className="mt-1 text-sm text-gray-300">
+              <p className="mt-1 text-lg text-gray-300">
                 {t("OurProducts.Product4desc")}
               </p>
             </div>
@@ -140,10 +140,10 @@ export default function OurProducts() {
           <div aria-hidden="true" className="relative h-32 w-full lg:hidden" />
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-4xl font-bold text-white">
                 {t("OurProducts.Product5")}
               </h2>
-              <p className="mt-1 text-sm text-gray-300">
+              <p className="mt-1 text-lg text-gray-300">
                 {t("OurProducts.Product5desc")}
               </p>
             </div>
@@ -168,10 +168,10 @@ export default function OurProducts() {
           <div aria-hidden="true" className="relative h-32 w-full lg:hidden" />
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-4xl font-bold text-white">
                 {t("OurProducts.Product6")}
               </h2>
-              <p className="mt-1 text-sm text-gray-300">
+              <p className="mt-1 text-lg text-gray-300">
                 {t("OurProducts.Product6desc")}
               </p>
             </div>
@@ -196,10 +196,10 @@ export default function OurProducts() {
           <div aria-hidden="true" className="relative h-32 w-full lg:hidden" />
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-4xl font-bold text-white">
                 {t("OurProducts.Product7")}
               </h2>
-              <p className="mt-1 text-sm text-gray-300">
+              <p className="mt-1 text-lg text-gray-300">
                 {t("OurProducts.Product7desc")}
               </p>
             </div>

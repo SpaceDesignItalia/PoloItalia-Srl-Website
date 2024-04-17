@@ -1,17 +1,14 @@
 import { Input } from "@nextui-org/react";
-import { Button, Textarea } from "@nextui-org/react";
-import { useTranslation } from "react-i18next";
+import { Textarea } from "@nextui-org/react";
+import { Button, ButtonGroup } from "@nextui-org/react";
 import ApartmentOutlinedIcon from "@mui/icons-material/ApartmentOutlined";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
-import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
-import FaxOutlinedIcon from "@mui/icons-material/FaxOutlined";
 
 export default function Contact() {
-  const { t } = useTranslation();
   return (
     <div className="relative isolate bg-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+        <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-40">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
               <svg
@@ -42,51 +39,27 @@ export default function Contact() {
                 />
               </svg>
             </div>
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+            <h2 className="text-4xl font-bold tracking-tight text-gray-900">
               POLO SRL
             </h2>
             <br />
-            <div className="flex flex-col gap-3">
-              <dl className="flex flex-row gap-4">
-                <dt className="flex-none">
-                  <ApartmentOutlinedIcon
-                    className="h-7 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                  <span className="sr-only">Address</span>
-                </dt>
-                <dd>
-                  Via Dante Alighieri 64, 50041 <br />
-                  Calenzano (FI), Italy
-                </dd>
-              </dl>
-              <dl className="flex flex-row gap-4">
-                <dt className="flex-none">
-                  <PhoneOutlinedIcon
-                    className="h-7 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                  <span className="sr-only">Phone</span>
-                </dt>
-                <dd>+39 055 882 5888</dd>
-              </dl>
-
-              <dl className="flex flex-row gap-4">
-                <dt className="flex-none">
-                  <FaxOutlinedIcon
-                    className="h-7 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                  <span className="sr-only">FAX</span>
-                </dt>
-                <dd>
-                  <span className="font-semibold">FAX:</span> +39 055 887 6111
-                </dd>
-              </dl>
+            <div className="flex gap-x-4">
+              <dt className="flex-none">
+                <span className="sr-only">Address</span>
+                <ApartmentOutlinedIcon
+                  className="h-7 w-6 text-gray-400"
+                  aria-hidden="true"
+                />
+              </dt>
+              <dd className="text-xl">
+                Via Dante Alighieri 64, 50041 Calenzano (FI)
+                <br />
+                ITALY
+              </dd>
             </div>
             <br />
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-              {t("Contact.Sales").toUpperCase()}
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+              UFFICIO COMMERCIALE
             </h2>
             <br />
             <div className="flex gap-x-4">
@@ -97,21 +70,19 @@ export default function Contact() {
                   aria-hidden="true"
                 />
               </dt>
-              <dd>
+              <dd className="text-xl">
                 <a
                   className="hover:text-gray-900"
                   href="mailto:hello@example.com"
                 >
-                  <span className="font-semibold">KRYO:</span>{" "}
-                  lapo@poloitalia.com <br />
-                  <span className="font-semibold">HELIOS:</span>{" "}
-                  luca@poloitalia.com
+                  KRYO: lapo@poloitalia.com <br />
+                  HELIOS: luca@poloitalia.com
                 </a>
               </dd>
             </div>
             <br />
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-              {t("Contact.Service").toUpperCase()}
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+              POST VENDITA
             </h2>
             <br />
             <div className="flex gap-x-4">
@@ -122,7 +93,7 @@ export default function Contact() {
                   aria-hidden="true"
                 />
               </dt>
-              <dd>
+              <dd className="text-xl">
                 <a
                   className="hover:text-gray-900"
                   href="mailto:hello@example.com"
@@ -132,8 +103,8 @@ export default function Contact() {
               </dd>
             </div>
             <br />
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-              {t("Contact.Accounting").toUpperCase()}
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+              AMMINISTRAZIONE E FORNITORI
             </h2>
             <br />
             <div className="flex gap-x-4">
@@ -144,7 +115,7 @@ export default function Contact() {
                   aria-hidden="true"
                 />
               </dt>
-              <dd>
+              <dd className="text-xl">
                 <a
                   className="hover:text-gray-900"
                   href="mailto:hello@example.com"
@@ -159,52 +130,39 @@ export default function Contact() {
         <form
           action="#"
           method="POST"
-          className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
+          className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-40"
         >
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <div className="mt-2.5">
-                  <Input label={t("Contact.Form.Name")} variant="underlined" />
+                  <Input label="Nome" variant="underlined" />
                 </div>
               </div>
               <div>
                 <div className="mt-2.5">
-                  <Input
-                    label={t("Contact.Form.Surname")}
-                    variant="underlined"
-                  />
+                  <Input label="Cognome" variant="underlined" />
                 </div>
               </div>
               <div className="sm:col-span-2">
                 <div className="mt-2.5">
-                  <Input
-                    type="email"
-                    label={t("Contact.Form.Email")}
-                    variant="underlined"
-                  />
+                  <Input type="email" label="Email" variant="underlined" />
                 </div>
               </div>
               <div className="sm:col-span-2">
                 <div className="mt-2.5">
-                  <Input
-                    label={t("Contact.Form.Object")}
-                    variant="underlined"
-                  />
+                  <Input label="Oggetto" variant="underlined" />
                 </div>
               </div>
               <div className="sm:col-span-2">
                 <div className="mt-2.5">
-                  <Textarea
-                    label={t("Contact.Form.Message")}
-                    variant="underlined"
-                  />
+                  <Textarea variant="underlined" label="Messaggio" />
                 </div>
               </div>
             </div>
             <div className="mt-8 flex justify-end">
-              <Button radius="sm" color="primary">
-                {t("Contact.Form.SendMessage")}
+              <Button size="lg" radius="sm" color="primary">
+                Invia
               </Button>
             </div>
           </div>

@@ -3,8 +3,8 @@ import Hero from "./Hero";
 import Partners from "./Partners";
 import CustomersAroundWorld from "./CustomersAroundWorld";
 import OurStrengths from "./OurStrengths";
-import Products from "../Products/Products";
 import ContactForm from "./ContactForm";
+import ProductsSection from "./ProductsSection";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <Partners />
       <OurStrengths />
-      <Products />
+      <ProductsSection />
       <CustomersAroundWorld />
       <ContactForm />
     </>

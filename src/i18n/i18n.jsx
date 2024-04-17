@@ -32,7 +32,7 @@ const resources = {
             "Wifi remote access to the equipment control board for any specific required modification and adjustment of the softwares.",
         },
         Product: {
-          ProductTitle: "Product",
+          ProductTitle: "Products",
           ProductDesc:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
           ProductCTA: "Discover our products",
@@ -88,6 +88,10 @@ const resources = {
         Product7desc:
           "Infrared technology equipment for the leak detection of the refrigerant gases.",
       },
+      Footer: {
+        FooterPhrase:
+          "Customized solutions for vacuum, leak testing and gas charging",
+      },
       Error404: {
         ErrorTitle: "Page not found",
         ErrorDesc: "Sorry, we couldn’t find the page you’re looking for.",
@@ -125,7 +129,7 @@ const resources = {
             "Accesso remoto WiFi ai quadri di controllo delle apparecchiature per ogni possibile richiesta di modifica e miglioramento dei software gestionali.",
         },
         Product: {
-          ProductTitle: "Prodotto",
+          ProductTitle: "Prodotti",
           ProductDesc:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
           ProductCTA: "Scopri i nostri prodotti",
@@ -180,6 +184,10 @@ const resources = {
         Product7: "PLD",
         Product7desc:
           "Unità per la ricerca delle perdite dei gas refrigeranti con tecnologia all'infrarosso.",
+      },
+      Footer: {
+        FooterPhrase:
+          "Dal 1998 soluzioni di vuoto, ricerca perdite e misura gas per la tua Azienda",
       },
       Error404: {
         ErrorTitle: "Pagina non trovata",
