@@ -1,9 +1,25 @@
 import React from "react";
+import emailjs from "@emailjs/browser";
 import { Button, Input, Textarea } from "@nextui-org/react";
 import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
   const { t } = useTranslation();
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    emailjs.sendForm(
+      "service_7oz1nst", // ID del servizio EmailJS
+      "template_wvkimuh", // ID del modello di email
+      event.target,
+      { publicKey: "KdUYSbU9I_tZnbm6D" }
+    );
+
+    // Resetta il form dopo l'invio
+    event.target.reset();
+  }
+
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
@@ -15,7 +31,7 @@ export default function ContactForm() {
         </p>
       </div>
       <form
-        action="#"
+        onSubmit={handleSubmit}
         method="POST"
         className="mx-auto mt-16 max-w-xl sm:mt-20"
       >
@@ -23,6 +39,7 @@ export default function ContactForm() {
           <div>
             <div className="mt-2.5">
               <Input
+                name="nome"
                 variant="underlined"
                 label={t("Home.ContactForm.FirstName")}
               />
@@ -31,6 +48,7 @@ export default function ContactForm() {
           <div>
             <div className="mt-2.5">
               <Input
+                name="cognome"
                 variant="underlined"
                 label={t("Home.ContactForm.LastName")}
               />
@@ -39,6 +57,7 @@ export default function ContactForm() {
           <div className="sm:col-span-2">
             <div className="mt-2.5">
               <Input
+                name="email"
                 type="email"
                 variant="underlined"
                 label={t("Home.ContactForm.Email")}
@@ -48,6 +67,7 @@ export default function ContactForm() {
           <div className="sm:col-span-2">
             <div className="mt-2.5">
               <Input
+                name="nome_azienda"
                 variant="underlined"
                 label={t("Home.ContactForm.Company")}
               />
@@ -57,6 +77,7 @@ export default function ContactForm() {
           <div className="sm:col-span-2">
             <div className="mt-2.5">
               <Textarea
+                name="messaggio"
                 variant="underlined"
                 label={t("Home.ContactForm.Message")}
               />

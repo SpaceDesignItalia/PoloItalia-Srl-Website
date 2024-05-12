@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import { useTranslation } from "react-i18next";
 
 import React from "react";
@@ -30,7 +30,13 @@ export default function Hero() {
                   {t("Home.HeroDesc")}
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
-                  <Button color="primary" size="lg" radius="sm">
+                  <Button
+                    color="primary"
+                    size="lg"
+                    radius="sm"
+                    as={Link}
+                    href="/contact"
+                  >
                     {t("Home.HeroCTA")}
                   </Button>
                 </div>

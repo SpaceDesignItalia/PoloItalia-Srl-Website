@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import world from "../../assets/world.svg";
 import { t } from "i18next";
 
@@ -7,7 +7,7 @@ export default function WorldMap() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
+          <p className="mt-2 text-3xl p-2 font-bold bg-gradient-to-r from-cyan-500 to-blue-700 bg-clip-text text-transparent sm:text-4xl text-center">
             {t("Home.CustomersAroundWorld")}
           </p>
         </div>

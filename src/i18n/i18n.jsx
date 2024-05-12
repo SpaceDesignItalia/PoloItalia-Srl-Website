@@ -1,5 +1,4 @@
 // i18n.js
-import { Description } from "@mui/icons-material";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
@@ -12,7 +11,7 @@ const resources = {
       },
       Home: {
         HeroText: "The refrigerant gases moving, dosing and filling company",
-        HeroDesc: `Since 1998, polo is your perfect partner for customized process equipment handling all the refrigerant gases classified as A1, A2, A2L and A3 series.`,
+        HeroDesc: `Since 1998, POLO is your perfect partner for customized process equipment handling all the refrigerant gases classified as A1, A2, A2L and A3 series.`,
         HeroCTA: "Speak with us!",
         Partners: "Partner",
         OurStrength: "Our Strengths",
@@ -34,14 +33,14 @@ const resources = {
         Product: {
           ProductTitle: "Products",
           ProductDesc:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            "Explore our wide range of high-quality products designed to meet your needs. At POLO, you'll find customized solutions for the use of refrigerant gases belonging to classes A1, A2, A2L, and A3. With over 25 years of experience in the industry, POLO offers reliable and secure systems, ensuring optimal performance in every application.",
           ProductCTA: "Discover our products",
         },
         CustomersAroundWorld: "Polo in the world",
         ContactForm: {
           Title: "Contact us",
           Description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            "Do you have any questions, suggestions, or requests? Feel free to reach out to us! Fill out the form below, and we'll get back to you as soon as possible. Alternatively, you can also email us directly or give us a call. Thank you for contacting us and for your interest!",
           FirstName: "First Name",
           LastName: "Last Name",
           Email: "Email",
@@ -108,7 +107,7 @@ const resources = {
       Home: {
         HeroText:
           "Specialisti per la movimentazione, il dosaggio e l’iniezione dei gas refrigeranti",
-        HeroDesc: `Nata nel 1998, polo è partner ideale per sistemi personalizzati nell’utilizzo di tutti i gas refrigeranti appartenenti alle classi A1, A2, A2L ed A3.`,
+        HeroDesc: `Nata nel 1998, POLO è partner ideale per sistemi personalizzati nell’utilizzo di tutti i gas refrigeranti appartenenti alle classi A1, A2, A2L ed A3.`,
         HeroCTA: "Parla con noi!",
         Partners: "Partner",
 
@@ -131,14 +130,14 @@ const resources = {
         Product: {
           ProductTitle: "Prodotti",
           ProductDesc:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            "Scopri la nostra vasta gamma di prodotti di alta qualità, progettati per soddisfare le tue esigenze. Da noi, troverai soluzioni personalizzate per l'utilizzo di gas refrigeranti appartenenti alle classi A1, A2, A2L ed A3. Con oltre 25 anni di esperienza nel settore, POLO offre sistemi affidabili e sicuri, garantendo prestazioni ottimali in ogni applicazione. ",
           ProductCTA: "Scopri i nostri prodotti",
         },
         CustomersAroundWorld: "Polo nel mondo",
         ContactForm: {
           Title: "Contattaci",
           Description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            "Hai domande, suggerimenti o richieste? Non esitare a contattarci! Compila il modulo qui sotto e saremo lieti di risponderti al più presto possibile. Se preferisci, puoi anche scriverci direttamente via email o chiamarci. Grazie per averci contattato e per il tuo interesse!",
           FirstName: "Nome",
           LastName: "Cognome",
           Email: "Email",
