@@ -1,12 +1,14 @@
 import { Input } from "@nextui-org/react";
 import { Textarea } from "@nextui-org/react";
-import { Button } from "@nextui-org/react";
 import emailjs from "@emailjs/browser";
+import { Button, ButtonGroup } from "@nextui-org/react";
+import { useTranslation } from "react-i18next";
 import ApartmentOutlinedIcon from "@mui/icons-material/ApartmentOutlined";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 import LocalPhoneRoundedIcon from "@mui/icons-material/LocalPhoneRounded";
 
 export default function Contact() {
+
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -21,6 +23,7 @@ export default function Contact() {
     event.target.reset();
   }
 
+  const { t } = useTranslation();
   return (
     <div className="relative isolate bg-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -85,7 +88,7 @@ export default function Contact() {
             </div>
             <br />
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              UFFICIO COMMERCIALE
+              {t("Contact.Sales")}
             </h2>
             <br />
             <div className="flex gap-x-4">
@@ -102,7 +105,7 @@ export default function Contact() {
             </div>
             <br />
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              POST VENDITA
+            {t("Contact.Service")}
             </h2>
             <br />
             <div className="flex gap-x-4">
@@ -119,7 +122,7 @@ export default function Contact() {
             </div>
             <br />
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              AMMINISTRAZIONE E FORNITORI
+              {t("Contact.Accounting")}
             </h2>
             <br />
             <div className="flex gap-x-4">

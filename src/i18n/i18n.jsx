@@ -10,10 +10,12 @@ const resources = {
         Contact: "Contact Us",
       },
       Home: {
-        HeroText: "The refrigerant gases moving, dosing and filling company",
+        HeroText: "The ",
+        HeroText1: "refrigerant gases moving",
+        HeroText2: ", dosing and filling company",
         HeroDesc: `Since 1998, POLO is your perfect partner for customized process equipment handling all the refrigerant gases classified as A1, A2, A2L and A3 series.`,
         HeroCTA: "Speak with us!",
-        Partners: "Partner",
+        Partners: "Partners",
         OurStrength: "Our Strengths",
         Strength1: {
           name: "Customization",
@@ -50,9 +52,9 @@ const resources = {
         },
       },
       Contact: {
-        Sales: "Sales",
-        Service: "Service",
-        Accounting: "Accounting and purchasing",
+        Sales: "SALES",
+        Service: "SERVICE",
+        Accounting: "ADMINISTRATION",
         Form: {
           Name: "Name",
           Surname: "Surname",
@@ -105,11 +107,12 @@ const resources = {
         Contact: "Contattaci",
       },
       Home: {
-        HeroText:
-          "Specialisti per la movimentazione, il dosaggio e l’iniezione dei gas refrigeranti",
+        HeroText: "",
+        HeroText1: "Specialisti per la movimentazione",
+        HeroText2: ", il dosaggio e l’iniezione dei gas refrigeranti",
         HeroDesc: `Nata nel 1998, POLO è partner ideale per sistemi personalizzati nell’utilizzo di tutti i gas refrigeranti appartenenti alle classi A1, A2, A2L ed A3.`,
         HeroCTA: "Parla con noi!",
-        Partners: "Partner",
+        Partners: "Partners",
 
         OurStrength: "I nostri punti di forza",
         Strength1: {
@@ -147,9 +150,9 @@ const resources = {
         },
       },
       Contact: {
-        Sales: "Ufficio Commerciale",
-        Service: "Post Vendita",
-        Accounting: "Amministrazione e Fornitori",
+        Sales: "UFFICIO COMMERCIALE",
+        Service: "POST VENDITA",
+        Accounting: "AMMINISTRAZIONE E FORNITORI",
         Form: {
           Name: "Nome",
           Surname: "Cognome",
@@ -168,7 +171,7 @@ const resources = {
         Product2: "FASTO",
         Product2desc:
           "Unità di vuoto e carica dei gas refrigeranti in bombole e drums di medie e grandi dimensioni.",
-        Product3: "LATA",
+        Product3: "AEROSOL",
         Product3desc:
           "Linee automatiche di riempimento dei gas refrigeranti per piccole bombole tipo aerosol.",
         Product4: "UNO REC",

@@ -52,7 +52,7 @@ export default function Partners() {
               height={48}
             />
           </a>
-          <a target="blank" href="https://www.vtechvacuumfluid.com">
+          <a target="blank" href="https://www.vtechonline.com/">
             <img
               className="col-span-2 col-start-1 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={partner6}

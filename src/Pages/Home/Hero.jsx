@@ -23,9 +23,11 @@ export default function Hero() {
 
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  {t("Home.HeroText")}
-                </h1>
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                {t("Home.HeroText")}
+                <span className="text-4xl bg-gradient-to-r from-cyan-500 to-blue-700 bg-clip-text text-transparent">{t("Home.HeroText1")}</span>
+                {t("Home.HeroText2")}
+              </h1>
                 <p className="mt-6 text-2xl leading-8 text-gray-600">
                   {t("Home.HeroDesc")}
                 </p>
