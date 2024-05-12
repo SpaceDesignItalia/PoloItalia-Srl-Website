@@ -1,10 +1,26 @@
 import { Input } from "@nextui-org/react";
 import { Textarea } from "@nextui-org/react";
-import { Button, ButtonGroup } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
+import emailjs from "@emailjs/browser";
 import ApartmentOutlinedIcon from "@mui/icons-material/ApartmentOutlined";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
+import LocalPhoneRoundedIcon from "@mui/icons-material/LocalPhoneRounded";
 
 export default function Contact() {
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    emailjs.sendForm(
+      "service_7oz1nst", // ID del servizio EmailJS
+      "template_79gipvk", // ID del modello di email
+      event.target,
+      { publicKey: "KdUYSbU9I_tZnbm6D" }
+    );
+
+    // Resetta il form dopo l'invio
+    event.target.reset();
+  }
+
   return (
     <div className="relative isolate bg-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -57,6 +73,16 @@ export default function Contact() {
                 ITALY
               </dd>
             </div>
+            <div className="flex gap-x-4">
+              <dt className="flex-none">
+                <span className="sr-only">Phone</span>
+                <LocalPhoneRoundedIcon
+                  className="h-7 w-6 text-gray-400"
+                  aria-hidden="true"
+                />
+              </dt>
+              <dd className="text-xl">+39 0558825888</dd>
+            </div>
             <br />
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
               UFFICIO COMMERCIALE
@@ -71,13 +97,7 @@ export default function Contact() {
                 />
               </dt>
               <dd className="text-xl">
-                <a
-                  className="hover:text-gray-900"
-                  href="mailto:hello@example.com"
-                >
-                  KRYO: lapo@poloitalia.com <br />
-                  HELIOS: luca@poloitalia.com
-                </a>
+                <a className="hover:text-gray-900">luca@poloitalia.com</a>
               </dd>
             </div>
             <br />
@@ -94,12 +114,7 @@ export default function Contact() {
                 />
               </dt>
               <dd className="text-xl">
-                <a
-                  className="hover:text-gray-900"
-                  href="mailto:hello@example.com"
-                >
-                  gianluca@poloitalia.com
-                </a>
+                <a className="hover:text-gray-900">gianluca@poloitalia.com</a>
               </dd>
             </div>
             <br />
@@ -116,19 +131,14 @@ export default function Contact() {
                 />
               </dt>
               <dd className="text-xl">
-                <a
-                  className="hover:text-gray-900"
-                  href="mailto:hello@example.com"
-                >
-                  elisa@poloitalia.com
-                </a>
+                <a className="hover:text-gray-900">elisa@poloitalia.com</a>
               </dd>
             </div>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600"></dl>
           </div>
         </div>
         <form
-          action="#"
+          onSubmit={handleSubmit}
           method="POST"
           className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-40"
         >
@@ -136,32 +146,41 @@ export default function Contact() {
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <div className="mt-2.5">
-                  <Input label="Nome" variant="underlined" />
+                  <Input name="nome" label="Nome" variant="underlined" />
                 </div>
               </div>
               <div>
                 <div className="mt-2.5">
-                  <Input label="Cognome" variant="underlined" />
+                  <Input name="cognome" label="Cognome" variant="underlined" />
                 </div>
               </div>
               <div className="sm:col-span-2">
                 <div className="mt-2.5">
-                  <Input type="email" label="Email" variant="underlined" />
+                  <Input
+                    name="email"
+                    type="email"
+                    label="Email"
+                    variant="underlined"
+                  />
                 </div>
               </div>
               <div className="sm:col-span-2">
                 <div className="mt-2.5">
-                  <Input label="Oggetto" variant="underlined" />
+                  <Input name="oggetto" label="Oggetto" variant="underlined" />
                 </div>
               </div>
               <div className="sm:col-span-2">
                 <div className="mt-2.5">
-                  <Textarea variant="underlined" label="Messaggio" />
+                  <Textarea
+                    name="messaggio"
+                    variant="underlined"
+                    label="Messaggio"
+                  />
                 </div>
               </div>
             </div>
             <div className="mt-8 flex justify-end">
-              <Button size="lg" radius="sm" color="primary">
+              <Button type="submit" size="lg" radius="sm" color="primary">
                 Invia
               </Button>
             </div>
