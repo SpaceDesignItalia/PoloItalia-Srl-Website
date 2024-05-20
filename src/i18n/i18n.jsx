@@ -73,7 +73,7 @@ const resources = {
         Product2: "FASTO",
         Product2desc:
           "Vacuum and charging equipment of refrigerant gases for medium/large cylinders and drums.",
-        Product3: "LATA",
+        Product3: "AEROSOL",
         Product3desc:
           "Automatic filling lines of refrigerant gases for small aerosol cans.",
         Product4: "UNO REC",
