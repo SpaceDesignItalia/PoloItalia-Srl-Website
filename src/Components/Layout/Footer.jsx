@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../assets/logo.jpg";
 import CoesioneFasciaItalia from "../../assets/Coesione-Italia-Fascia-Loghi_01.jpg";
+import LocandinaRenew from "../../assets/Locandina-Renew.png";
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {
@@ -94,9 +95,14 @@ export default function Footer() {
           </p>
         </div>
         <img
-          className="mt-16 max-w-3xl mx-auto"
+          className="mt-16 md:max-w-3xl mx-auto "
           src={CoesioneFasciaItalia}
           alt="coesione fascia italia"
+        />
+        <img
+          className="mt-16 max-w-xs mx-auto"
+          src={LocandinaRenew}
+          alt="locandina Renew"
         />
       </div>
     </footer>
